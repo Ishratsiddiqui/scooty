@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EVEE SCOOTY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-drak">
+        <div class="container">
+          <a class="navbar-brand" href="#" ><img src="data:image/png;base64,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" alt="" style="width: 90px;height: 50px;"> I am Evee.are you?</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home" style="color: #fff;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="modles" >MODLES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dealers">DEALERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">CONTACT</a>
+              </li>
+              <button>Book Now</button>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+     <!-- navbar end -->
+
+     <section class="main">
+      <div class="container py-5">
+        <div class="row py-4">
+          <div class="col-lg-7 pt-5 text-center">
+          <p class="pt-5">Effortless, Eco-Friendly,
+            Electric Scooter Rides
+            for All!</p>
+            <button class="btn1">Oder Now</button>
+          </div>
+        </div>
+      </div>
+     </section>
+     <h1>CHOOSE FROM 8 MODELS</h1>
+     <!-- st -->
+      
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://evee.pk/wp-content/uploads/2024/12/Untitled-37.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Evee C1 Air</h5>
+            <p class="card-text">₨ 305,000.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Check details <i class="fa-solid fa-arrow-right"></i></small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://evee.pk/wp-content/uploads/2024/12/Untitled-38.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Evee S1 Pro</h5>
+            <p class="card-text">₨ 266,000.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Check details <i class="fa-solid fa-arrow-right"></i></small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://evee.pk/wp-content/uploads/2024/02/Untitled-20.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Evee S1</h5>
+            <p class="card-text">₨ 203,000.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Check details <i class="fa-solid fa-arrow-right"></i></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>EVEE Electric Comparison</h2>
+     <!-- section2 -->
+     <div class="row " >
+      <div class="col">
+        <div class="card h-100">
+          
+          <div class="card-body" style="background-color: aquamarine; ">
+            <h1 style="background-color: aquamarine; margin: 7px;">Evee S1</h1>
+            <h5 class="card-title">Speed	60 KM/hr</h5>
+            <hr>
+            <h5 class="card-title">Range	90 KM</h5>
+            <hr>
+            <h5 class="card-title">Electric Motor	1200W</h5>
+            <hr>
+            <h5 class="card-title">Battery Type	72V 32ah Graphene</h5>
+            <hr>
+            <h5 class="card-title">Warranty	24 Months</h5>
+            <hr>
+            <h5 class="card-title">Warranty 24 Months</h5>
+            <hr>
+            <h5 class="card-title">Price	Rs. 203,000</h5>
+            
+            <button class="text">Book now</button>
+           
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+         
+          <div class="card-body"  style="background-color: aquamarine;">
+            <h1 style="background-color: aquamarine; margin: 7px;">EVEE S1 Pro</h1>
+            <h5 class="card-title">Speed	60 KM/hr</h5>
+            <hr>
+            <h5 class="card-title">Range	100 KM</h5>
+            <hr>
+            <h5 class="card-title">Electric Motor	2000W</h5>
+            <hr>
+            <h5 class="card-title">Battery Type	72V 35ah Graphene</h5>
+            <hr>
+            <h5 class="card-title">Warranty	24 Months</h5>
+            <hr>
+            <h5 class="card-title">Charging Type	5 Hours</h5>
+            <hr>
+            <h5 class="card-title">Price	Rs. 266,000</h5>
+            
+            <button class="text">Book now</button>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+         
+          <div class="card-body"  style="background-color: aquamarine;">
+            <h1 style="background-color: aquamarine; margin: 7px;">EVEE C1 Air</h1>
+            <h5 class="card-title">Speed	70 KM/hr</h5>
+            <hr>
+            <h5 class="card-title">Range	120 KM</h5>
+            <hr>
+            <h5 class="card-title">Electric Motor	2000W</h5>
+            <hr>
+            <h5 class="card-title">Battery Type	72V 35ah Graphene</h5>
+            <hr>
+            <h5 class="card-title">Warranty	24 Months</h5>
+            <hr>
+            <h5 class="card-title">Charging Type	5 Hours</h5>
+            <hr>
+            <h5 class="card-title">Price	Rs. 305,000
+            </h5>
+            
+            <button class="text">Book now</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- 4 -->
+     <div class="now">
+      <div class="now1">
+       <h3>OWERMENT <br>
+        IN EVERY RIDE.</h3>
+        <button class="bt">NOWMORE <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+     </div>
+     <!-- 4end -->
+      <div class="sim">
+       <h4>BUILT TO LAST</h4>
+      </div>
+<!-- 5 -->
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card" style="height: 430px; ">
+      <img src="https://cdn.shopify.com/s/files/1/0783/2161/5133/files/AXI03011_A10_J84JWRWR.jpg?v=1706178381" class="card-img-top" alt="...">
+      <h5 class="card-title" style="text-align: center; font-size: 50px; color: rgb(12, 12, 12);">Durable Chassis</h5>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kxKxAQGtykcgGMXmiu6XQSS0WcwhyyzP6A&s" class="card-img-top" alt="...">
+      <h5 class="card-title" style="text-align: center; font-size: 50px; color: rgb(12, 12, 12);">Powerful Electric Motor</h5>
+      
+    </div>
+  </div>
+  
+  
+</div>
+     <!-- 5end -->
+      <!-- footer -->
+       <footer>
+        <div class="container-one">
+          <a href="#"><i class="fa-brands fa-facebook"  style="float: right; background: blue; color: #fff; font-size: 30px; margin: 10px;"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"  style="float: right; background: #fff; color: red; font-size: 30px; margin: 10px;"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"  style="float: right; background: black; color: #fff; font-size: 30px; margin: 10px;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"  style="float: right; background: rgb(235, 85, 16); color: #fff; font-size: 30px; margin: 10px;"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"  style="float: right; background: #fff; color: blue; font-size: 30px; margin: 10px;"></i></a>
+            <h6 style="color: #2e5e48; text-align: center;  font-size: 40px; margin: 10px;">Manufacturing Unit</h6>
+            <p style="color: #fff; text-align: center;">19-KM, Baghdadi Street, Off Multan Road,
+              Lahore, Punjab Pakistan</p>
+          <div class="footer-content">
+           
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXqmXHCpzrtF7hJaVb-O8hlWwDQ_ENZYCmg&s" alt="" style="margin: 15px 15px; border-radius: 450px;">
+            <p style="font-size: 20px; color: #fff; margin: 20px;">Revolutionizing Transport</p>
+            <h4 style="font-size: 40px; color: #2e5e48; margin: 20px;">Get in Touch</h4>
+            <a href="#" style="color: #fff; margin: 20px;"><i class="fa-solid fa-envelope" style="color: #2e5e48; margin: 10px;"></i>sales@evee.pk</a> <br>
+            <a href="#" style="color: #fff; margin: 20px;"><i class="fa-solid fa-envelope" style="color: #2e5e48; margin: 10px;"></i>support@evee.pk</a> <br>
+            <a href="#" style="color: #fff; margin: 20px;"><i class="fa-solid fa-phone-volume" style="color: #2e5e48; margin: 10px;"></i>+92 325 2292290</a>
+            <p style="color: #fff; margin: 20px;">2025 Evee | All Rights Reserved | Developed by Pixel Movers</p>
+            
+            
+          </div>
+        </div>
+       </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
